@@ -16,7 +16,7 @@
 Server.local.options.sampleRate = 48000;
 Server.internal.options.sampleRate = 48000;
 ~path = (PathName(thisProcess.nowExecutingPath)).pathOnly;
-~currentPath = ~path ++ "presets/rebecca";
+~currentPath = ~path ++ "presets/performance";
 
 s.waitForBoot({
 
@@ -124,10 +124,8 @@ s.waitForBoot({
 		~mixSpace = ~reader[16];
 
 
-
 		//make a sample list for the selection
 		~sampleList = Array.fill(~buf.size, {|i| ~buf[i].path.basename.splitext[0].asString});
-
 
 		"parameters, list of samples loaded".postln;
 
@@ -182,7 +180,7 @@ s.waitForBoot({
 						}, {"no particles".postln});
 
 
-						env[3].wait;
+						(env[3] - (env[3]/4)).wait;
 					}, {
 						// small delay so we know the next step
 						(1/8).wait;
@@ -1545,12 +1543,13 @@ s.waitForBoot({
 
 		);
 
-		if(~samplerOn = true, {~samplerBtn.value = 1}, {~samplerBtn.value = 0});
-		if(~sineOn = true, {~sineBtn.value = 1}, {~sineBtn.value = 0});
-		if(~sawOn = true, {~sawBtn.value = 1}, {~sawBtn.value = 0});
-		if(~klankOn = true, {~klankBtn.value = 1}, {~klankBtn.value = 0});
+		if(~samplerOn == true, {~samplerBtn.value = 1}, {~samplerBtn.value = 0});
+		if(~sineOn == true, {~sineBtn.value = 1}, {~sineBtn.value = 0});
+		if(~sawOn == true, {~sawBtn.value = 1}, {~sawBtn.value = 0});
+		if(~klankOn == true, {~klankBtn.value = 1}, {~klankBtn.value = 0});
 /*		if(~cueOn = true, {~cueStateButton.value = 1}, {~cueStateButton.value = 0});*/
-		if(~particlesOn = true, {~particleBtn.value = 1}, {~particleBtn.value = 0});
+		if(~particlesOn == true, {~particleBtn.value = 1}, {~particleBtn.value = 0});
+
 /*
 		~activeSw.value;
 		~switch.value;
