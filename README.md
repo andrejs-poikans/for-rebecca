@@ -30,5 +30,7 @@ Samples do not load...
 1. make sure that the samples exist in the correct location, if not, copy them inside 'samples' folder just as a list of files – not within other folders
 2. close supercollider and reopen it
 
-<img width="1440" height="811" alt="Screenshot 2026-02-24 at 14 20 05" src="https://github.com/user-attachments/assets/ac392448-1a1a-4f33-be9f-df97f2634592" />
+<!-- <img width="1440" height="811" alt="Screenshot 2026-02-24 at 14 20 05" src="https://github.com/user-attachments/assets/ac392448-1a1a-4f33-be9f-df97f2634592" /> -->
+
+<img width="1440" height="763" alt="Screenshot 2026-03-31 at 00 25 04" src="https://github.com/user-attachments/assets/1dfe02cc-3700-4eb3-a84a-1b6a2d0c5005" />
 
