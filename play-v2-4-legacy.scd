@@ -11,12 +11,6 @@
 //adaptation from 'compos-mentis' software for Jon Heilbron and Rebecca Lane 2025
 //by Andrejs Poikāns
 
-// debug
-~sineG.dumpTree(true);
-~gate[1];
-
-~pG.dumpTree(true);
-
 (
 
 Server.local.options.sampleRate = 48000;
