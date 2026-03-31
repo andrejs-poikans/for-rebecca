@@ -22,7 +22,7 @@ Installation guide:
 1. if not already on your device, download and install SuperCollider 3.13.0 (https://supercollider.github.io/downloads) (tested, it can be that it works also with later or earlier)
 2. download this folder as zip from github ([https://github.com/andrejs-poikans/compos-mentis-5-0](https://github.com/andrejs-poikans/for-rebecca))
 3. unzip the file in a desired location on your device
-4. open play-...-latest.scd (currently v2) via your desidred supercollider version, evaluate the code in the file
+4. open play-...-latest.scd via your desidred supercollider version, evaluate the code in the file
 5. after a short loading time, the GUI should appear, that's all!
 
 Trouble-shooting:
